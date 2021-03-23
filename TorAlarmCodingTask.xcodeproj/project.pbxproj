@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503AAA0BE40B690F7734580D /* Pods_TorAlarmCodingTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C61605D6B4997293BDACBB /* Pods_TorAlarmCodingTaskTests.framework */; };
+		DBA11B5B370F8618222B7820 /* Pods_TorAlarmCodingTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BEEC3A53E38272DE96199C /* Pods_TorAlarmCodingTask.framework */; };
+		F91E1E8EAEA963DB620F7C17 /* Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B929BBCAF7D069CD56749005 /* Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework */; };
+		FA10BFA32609C5C70062E2C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA10BFA22609C5C70062E2C1 /* README.md */; };
+		FA5B07E02605470300DC2AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B07DF2605470300DC2AE2 /* AppDelegate.swift */; };
+		FA5B07E22605470300DC2AE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B07E12605470300DC2AE2 /* SceneDelegate.swift */; };
+		FA5B07E72605470300DC2AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5B07E52605470300DC2AE2 /* Main.storyboard */; };
+		FA5B07E92605470400DC2AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5B07E82605470400DC2AE2 /* Assets.xcassets */; };
+		FA5B07EC2605470400DC2AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5B07EA2605470400DC2AE2 /* LaunchScreen.storyboard */; };
+		FA5B07F72605470400DC2AE2 /* TorAlarmCodingTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B07F62605470400DC2AE2 /* TorAlarmCodingTaskTests.swift */; };
+		FA5B08022605470400DC2AE2 /* TorAlarmCodingTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B08012605470400DC2AE2 /* TorAlarmCodingTaskUITests.swift */; };
+		FA5B081F2605488000DC2AE2 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B081E2605488000DC2AE2 /* NewsListViewController.swift */; };
+		FA5B08272605498400DC2AE2 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B08262605498400DC2AE2 /* NewsListViewModel.swift */; };
+		FA5B082E26054AD500DC2AE2 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B082D26054AD500DC2AE2 /* Networkable.swift */; };
+		FA5B083726054AF700DC2AE2 /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B083626054AF700DC2AE2 /* WebApi.swift */; };
+		FA5B083F26054B0E00DC2AE2 /* StubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B083E26054B0E00DC2AE2 /* StubApi.swift */; };
+		FA5B084826054FB200DC2AE2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B084726054FB200DC2AE2 /* Response.swift */; };
+		FA5B084D26054FF500DC2AE2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B084C26054FF500DC2AE2 /* Article.swift */; };
+		FA5B0852260553FE00DC2AE2 /* mockPage1.json in Resources */ = {isa = PBXBuildFile; fileRef = FA5B0851260553FE00DC2AE2 /* mockPage1.json */; };
+		FA5B085B2605558500DC2AE2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B08592605558500DC2AE2 /* NewsTableViewCell.swift */; };
+		FA5B085C2605558500DC2AE2 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5B085A2605558500DC2AE2 /* NewsTableViewCell.xib */; };
+		FA68F053260938D7007F26E2 /* StubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F052260938D7007F26E2 /* StubApiTests.swift */; };
+		FA68F05826094816007F26E2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F05726094816007F26E2 /* UIColor+Extension.swift */; };
+		FA68F06926094DAD007F26E2 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F06826094DAD007F26E2 /* SearchResultTableViewController.swift */; };
+		FAB0966126066B5F000EFFE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966026066B5F000EFFE6 /* Category.swift */; };
+		FAB0966626066B7E000EFFE6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966526066B7E000EFFE6 /* CategoryViewController.swift */; };
+		FAB0966B26066B97000EFFE6 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966A26066B97000EFFE6 /* CategoryListViewModel.swift */; };
+		FAB0967026067394000EFFE6 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB0966F26067394000EFFE6 /* categories.json */; };
+		FAB096782606829F000EFFE6 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB096772606829F000EFFE6 /* CategoryViewModel.swift */; };
+		FAB0967E26068377000EFFE6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0967C26068377000EFFE6 /* CategoryTableViewCell.swift */; };
+		FAB0967F26068377000EFFE6 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB0967D26068377000EFFE6 /* CategoryTableViewCell.xib */; };
+		FAB09684260692F9000EFFE6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB09683260692F9000EFFE6 /* Enums.swift */; };
+		FAFAC10F26075DB000A22769 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC10E26075DB000A22769 /* NewsViewModel.swift */; };
+		FAFAC11826076D1200A22769 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC11726076D1200A22769 /* NewsDetailViewController.swift */; };
+		FAFAC141260785AF00A22769 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC140260785AF00A22769 /* UIViewController+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA5B07F32605470400DC2AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA5B07D42605470300DC2AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5B07DB2605470300DC2AE2;
+			remoteInfo = TorAlarmCodingTask;
+		};
+		FA5B07FE2605470400DC2AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA5B07D42605470300DC2AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5B07DB2605470300DC2AE2;
+			remoteInfo = TorAlarmCodingTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1648EF7FBF1B68660539114C /* Pods-TorAlarmCodingTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTaskTests/Pods-TorAlarmCodingTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60C61605D6B4997293BDACBB /* Pods_TorAlarmCodingTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorAlarmCodingTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7753D88318CEBF4BF5A6AD3E /* Pods-TorAlarmCodingTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTaskTests.release.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTaskTests/Pods-TorAlarmCodingTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		89A83319FFED641CD40ED3EF /* Pods-TorAlarmCodingTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTask.debug.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTask/Pods-TorAlarmCodingTask.debug.xcconfig"; sourceTree = "<group>"; };
+		936C8E3917077F54E4FC262B /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4BEEC3A53E38272DE96199C /* Pods_TorAlarmCodingTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorAlarmCodingTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B929BBCAF7D069CD56749005 /* Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD4CE399D72FB6721C8C787 /* Pods-TorAlarmCodingTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTask.release.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTask/Pods-TorAlarmCodingTask.release.xcconfig"; sourceTree = "<group>"; };
+		F455A883879C800430983658 /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA10BFA22609C5C70062E2C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA5B07DC2605470300DC2AE2 /* TorAlarmCodingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorAlarmCodingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5B07DF2605470300DC2AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA5B07E12605470300DC2AE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA5B07E62605470300DC2AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA5B07E82605470400DC2AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5B07EB2605470400DC2AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA5B07ED2605470400DC2AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5B07F22605470400DC2AE2 /* TorAlarmCodingTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorAlarmCodingTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5B07F62605470400DC2AE2 /* TorAlarmCodingTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorAlarmCodingTaskTests.swift; sourceTree = "<group>"; };
+		FA5B07F82605470400DC2AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5B07FD2605470400DC2AE2 /* TorAlarmCodingTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorAlarmCodingTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5B08012605470400DC2AE2 /* TorAlarmCodingTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorAlarmCodingTaskUITests.swift; sourceTree = "<group>"; };
+		FA5B08032605470400DC2AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5B081E2605488000DC2AE2 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		FA5B08262605498400DC2AE2 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		FA5B082D26054AD500DC2AE2 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		FA5B083626054AF700DC2AE2 /* WebApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
+		FA5B083E26054B0E00DC2AE2 /* StubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApi.swift; sourceTree = "<group>"; };
+		FA5B084726054FB200DC2AE2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FA5B084C26054FF500DC2AE2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		FA5B0851260553FE00DC2AE2 /* mockPage1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockPage1.json; sourceTree = "<group>"; };
+		FA5B08592605558500DC2AE2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		FA5B085A2605558500DC2AE2 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		FA68F052260938D7007F26E2 /* StubApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApiTests.swift; sourceTree = "<group>"; };
+		FA68F05726094816007F26E2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		FA68F06826094DAD007F26E2 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		FAB0966026066B5F000EFFE6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FAB0966526066B7E000EFFE6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FAB0966A26066B97000EFFE6 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		FAB0966F26067394000EFFE6 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		FAB096772606829F000EFFE6 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		FAB0967C26068377000EFFE6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		FAB0967D26068377000EFFE6 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		FAB09683260692F9000EFFE6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FAFAC10E26075DB000A22769 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		FAFAC11726076D1200A22769 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		FAFAC140260785AF00A22769 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA5B07D92605470300DC2AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA11B5B370F8618222B7820 /* Pods_TorAlarmCodingTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07EF2605470400DC2AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503AAA0BE40B690F7734580D /* Pods_TorAlarmCodingTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07FA2605470400DC2AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91E1E8EAEA963DB620F7C17 /* Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456CDE238397873F08298A70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A83319FFED641CD40ED3EF /* Pods-TorAlarmCodingTask.debug.xcconfig */,
+				CDD4CE399D72FB6721C8C787 /* Pods-TorAlarmCodingTask.release.xcconfig */,
+				F455A883879C800430983658 /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.debug.xcconfig */,
+				936C8E3917077F54E4FC262B /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.release.xcconfig */,
+				1648EF7FBF1B68660539114C /* Pods-TorAlarmCodingTaskTests.debug.xcconfig */,
+				7753D88318CEBF4BF5A6AD3E /* Pods-TorAlarmCodingTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF5F3AD166112B1DD6E6AA87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4BEEC3A53E38272DE96199C /* Pods_TorAlarmCodingTask.framework */,
+				B929BBCAF7D069CD56749005 /* Pods_TorAlarmCodingTask_TorAlarmCodingTaskUITests.framework */,
+				60C61605D6B4997293BDACBB /* Pods_TorAlarmCodingTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5B07D32605470300DC2AE2 = {
+			isa = PBXGroup;
+			children = (
+				FA5B07DE2605470300DC2AE2 /* TorAlarmCodingTask */,
+				FA5B07F52605470400DC2AE2 /* TorAlarmCodingTaskTests */,
+				FA5B08002605470400DC2AE2 /* TorAlarmCodingTaskUITests */,
+				FA5B07DD2605470300DC2AE2 /* Products */,
+				456CDE238397873F08298A70 /* Pods */,
+				EF5F3AD166112B1DD6E6AA87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5B07DD2605470300DC2AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B07DC2605470300DC2AE2 /* TorAlarmCodingTask.app */,
+				FA5B07F22605470400DC2AE2 /* TorAlarmCodingTaskTests.xctest */,
+				FA5B07FD2605470400DC2AE2 /* TorAlarmCodingTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5B07DE2605470300DC2AE2 /* TorAlarmCodingTask */ = {
+			isa = PBXGroup;
+			children = (
+				FA10BFA22609C5C70062E2C1 /* README.md */,
+				FA5B07DF2605470300DC2AE2 /* AppDelegate.swift */,
+				FA5B07E12605470300DC2AE2 /* SceneDelegate.swift */,
+				FA68F070260954BE007F26E2 /* Search */,
+				FA68F060260948A4007F26E2 /* Constants */,
+				FA68F05C26094895007F26E2 /* Extensions */,
+				FA5B082B26054ABE00DC2AE2 /* Network */,
+				FAB0965C26066B10000EFFE6 /* Categories */,
+				FA5B081A260547FD00DC2AE2 /* NewsList */,
+				FAFAC11326076CD300A22769 /* NewsDetail */,
+				FA5B08132605472B00DC2AE2 /* SupportingFiles */,
+				FA5B08122605471900DC2AE2 /* Storyboards */,
+			);
+			path = TorAlarmCodingTask;
+			sourceTree = "<group>";
+		};
+		FA5B07F52605470400DC2AE2 /* TorAlarmCodingTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA68F064260948C5007F26E2 /* StubApi */,
+				FA5B07F62605470400DC2AE2 /* TorAlarmCodingTaskTests.swift */,
+				FA5B07F82605470400DC2AE2 /* Info.plist */,
+			);
+			path = TorAlarmCodingTaskTests;
+			sourceTree = "<group>";
+		};
+		FA5B08002605470400DC2AE2 /* TorAlarmCodingTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B08012605470400DC2AE2 /* TorAlarmCodingTaskUITests.swift */,
+				FA5B08032605470400DC2AE2 /* Info.plist */,
+			);
+			path = TorAlarmCodingTaskUITests;
+			sourceTree = "<group>";
+		};
+		FA5B08122605471900DC2AE2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B07E52605470300DC2AE2 /* Main.storyboard */,
+				FA5B07EA2605470400DC2AE2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA5B08132605472B00DC2AE2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B07E82605470400DC2AE2 /* Assets.xcassets */,
+				FA5B07ED2605470400DC2AE2 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FA5B081A260547FD00DC2AE2 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B081D2605481F00DC2AE2 /* Model */,
+				FA5B081C2605481700DC2AE2 /* View */,
+				FA5B081B2605481000DC2AE2 /* ViewModel */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		FA5B081B2605481000DC2AE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B08262605498400DC2AE2 /* NewsListViewModel.swift */,
+				FAFAC10E26075DB000A22769 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA5B081C2605481700DC2AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B081E2605488000DC2AE2 /* NewsListViewController.swift */,
+				FA5B08592605558500DC2AE2 /* NewsTableViewCell.swift */,
+				FA5B085A2605558500DC2AE2 /* NewsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA5B081D2605481F00DC2AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B084726054FB200DC2AE2 /* Response.swift */,
+				FA5B084C26054FF500DC2AE2 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA5B082B26054ABE00DC2AE2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B082D26054AD500DC2AE2 /* Networkable.swift */,
+				FA5B083626054AF700DC2AE2 /* WebApi.swift */,
+				FA5B083E26054B0E00DC2AE2 /* StubApi.swift */,
+				FA5B0851260553FE00DC2AE2 /* mockPage1.json */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA68F05C26094895007F26E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAC140260785AF00A22769 /* UIViewController+Extension.swift */,
+				FA68F05726094816007F26E2 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA68F060260948A4007F26E2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FAB09683260692F9000EFFE6 /* Enums.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA68F064260948C5007F26E2 /* StubApi */ = {
+			isa = PBXGroup;
+			children = (
+				FA68F052260938D7007F26E2 /* StubApiTests.swift */,
+			);
+			path = StubApi;
+			sourceTree = "<group>";
+		};
+		FA68F070260954BE007F26E2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FA68F071260954CC007F26E2 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FA68F071260954CC007F26E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA68F06826094DAD007F26E2 /* SearchResultTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAB0965C26066B10000EFFE6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0965F26066B2F000EFFE6 /* Model */,
+				FAB0965E26066B27000EFFE6 /* View */,
+				FAB0965D26066B20000EFFE6 /* ViewModel */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FAB0965D26066B20000EFFE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0966A26066B97000EFFE6 /* CategoryListViewModel.swift */,
+				FAB096772606829F000EFFE6 /* CategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAB0965E26066B27000EFFE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0966526066B7E000EFFE6 /* CategoryViewController.swift */,
+				FAB0967C26068377000EFFE6 /* CategoryTableViewCell.swift */,
+				FAB0967D26068377000EFFE6 /* CategoryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAB0965F26066B2F000EFFE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0966026066B5F000EFFE6 /* Category.swift */,
+				FAB0966F26067394000EFFE6 /* categories.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFAC11326076CD300A22769 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAC11526076CF000A22769 /* View */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		FAFAC11526076CF000A22769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAFAC11726076D1200A22769 /* NewsDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5B07DB2605470300DC2AE2 /* TorAlarmCodingTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5B08062605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTask" */;
+			buildPhases = (
+				981EC949C73A4FD2167074F6 /* [CP] Check Pods Manifest.lock */,
+				FA5B07D82605470300DC2AE2 /* Sources */,
+				FA5B07D92605470300DC2AE2 /* Frameworks */,
+				FA5B07DA2605470300DC2AE2 /* Resources */,
+				6925636604FC804F0BE2B01E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorAlarmCodingTask;
+			productName = TorAlarmCodingTask;
+			productReference = FA5B07DC2605470300DC2AE2 /* TorAlarmCodingTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA5B07F12605470400DC2AE2 /* TorAlarmCodingTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5B08092605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTaskTests" */;
+			buildPhases = (
+				3D29E590C8BA40B49B78EFD6 /* [CP] Check Pods Manifest.lock */,
+				FA5B07EE2605470400DC2AE2 /* Sources */,
+				FA5B07EF2605470400DC2AE2 /* Frameworks */,
+				FA5B07F02605470400DC2AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5B07F42605470400DC2AE2 /* PBXTargetDependency */,
+			);
+			name = TorAlarmCodingTaskTests;
+			productName = TorAlarmCodingTaskTests;
+			productReference = FA5B07F22605470400DC2AE2 /* TorAlarmCodingTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA5B07FC2605470400DC2AE2 /* TorAlarmCodingTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5B080C2605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTaskUITests" */;
+			buildPhases = (
+				72F7F0A718AE97A058A7904F /* [CP] Check Pods Manifest.lock */,
+				FA5B07F92605470400DC2AE2 /* Sources */,
+				FA5B07FA2605470400DC2AE2 /* Frameworks */,
+				FA5B07FB2605470400DC2AE2 /* Resources */,
+				A32E3DFAE5B8A3B9B52E7F6E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5B07FF2605470400DC2AE2 /* PBXTargetDependency */,
+			);
+			name = TorAlarmCodingTaskUITests;
+			productName = TorAlarmCodingTaskUITests;
+			productReference = FA5B07FD2605470400DC2AE2 /* TorAlarmCodingTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA5B07D42605470300DC2AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FA5B07DB2605470300DC2AE2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FA5B07F12605470400DC2AE2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FA5B07DB2605470300DC2AE2;
+					};
+					FA5B07FC2605470400DC2AE2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FA5B07DB2605470300DC2AE2;
+					};
+				};
+			};
+			buildConfigurationList = FA5B07D72605470300DC2AE2 /* Build configuration list for PBXProject "TorAlarmCodingTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA5B07D32605470300DC2AE2;
+			productRefGroup = FA5B07DD2605470300DC2AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5B07DB2605470300DC2AE2 /* TorAlarmCodingTask */,
+				FA5B07F12605470400DC2AE2 /* TorAlarmCodingTaskTests */,
+				FA5B07FC2605470400DC2AE2 /* TorAlarmCodingTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5B07DA2605470300DC2AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5B07EC2605470400DC2AE2 /* LaunchScreen.storyboard in Resources */,
+				FAB0967F26068377000EFFE6 /* CategoryTableViewCell.xib in Resources */,
+				FAB0967026067394000EFFE6 /* categories.json in Resources */,
+				FA5B07E92605470400DC2AE2 /* Assets.xcassets in Resources */,
+				FA5B07E72605470300DC2AE2 /* Main.storyboard in Resources */,
+				FA5B0852260553FE00DC2AE2 /* mockPage1.json in Resources */,
+				FA10BFA32609C5C70062E2C1 /* README.md in Resources */,
+				FA5B085C2605558500DC2AE2 /* NewsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07F02605470400DC2AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07FB2605470400DC2AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D29E590C8BA40B49B78EFD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TorAlarmCodingTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6925636604FC804F0BE2B01E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask/Pods-TorAlarmCodingTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask/Pods-TorAlarmCodingTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask/Pods-TorAlarmCodingTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F7F0A718AE97A058A7904F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981EC949C73A4FD2167074F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TorAlarmCodingTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A32E3DFAE5B8A3B9B52E7F6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests/Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA5B07D82605470300DC2AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA68F05826094816007F26E2 /* UIColor+Extension.swift in Sources */,
+				FAB096782606829F000EFFE6 /* CategoryViewModel.swift in Sources */,
+				FA5B084826054FB200DC2AE2 /* Response.swift in Sources */,
+				FA5B083F26054B0E00DC2AE2 /* StubApi.swift in Sources */,
+				FA5B085B2605558500DC2AE2 /* NewsTableViewCell.swift in Sources */,
+				FA5B084D26054FF500DC2AE2 /* Article.swift in Sources */,
+				FAB0967E26068377000EFFE6 /* CategoryTableViewCell.swift in Sources */,
+				FA68F06926094DAD007F26E2 /* SearchResultTableViewController.swift in Sources */,
+				FAFAC11826076D1200A22769 /* NewsDetailViewController.swift in Sources */,
+				FAFAC141260785AF00A22769 /* UIViewController+Extension.swift in Sources */,
+				FAB0966626066B7E000EFFE6 /* CategoryViewController.swift in Sources */,
+				FA5B07E02605470300DC2AE2 /* AppDelegate.swift in Sources */,
+				FA5B07E22605470300DC2AE2 /* SceneDelegate.swift in Sources */,
+				FAFAC10F26075DB000A22769 /* NewsViewModel.swift in Sources */,
+				FA5B081F2605488000DC2AE2 /* NewsListViewController.swift in Sources */,
+				FA5B082E26054AD500DC2AE2 /* Networkable.swift in Sources */,
+				FAB0966B26066B97000EFFE6 /* CategoryListViewModel.swift in Sources */,
+				FA5B08272605498400DC2AE2 /* NewsListViewModel.swift in Sources */,
+				FA5B083726054AF700DC2AE2 /* WebApi.swift in Sources */,
+				FAB09684260692F9000EFFE6 /* Enums.swift in Sources */,
+				FAB0966126066B5F000EFFE6 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07EE2605470400DC2AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5B07F72605470400DC2AE2 /* TorAlarmCodingTaskTests.swift in Sources */,
+				FA68F053260938D7007F26E2 /* StubApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5B07F92605470400DC2AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5B08022605470400DC2AE2 /* TorAlarmCodingTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5B07F42605470400DC2AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5B07DB2605470300DC2AE2 /* TorAlarmCodingTask */;
+			targetProxy = FA5B07F32605470400DC2AE2 /* PBXContainerItemProxy */;
+		};
+		FA5B07FF2605470400DC2AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5B07DB2605470300DC2AE2 /* TorAlarmCodingTask */;
+			targetProxy = FA5B07FE2605470400DC2AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA5B07E52605470300DC2AE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5B07E62605470300DC2AE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA5B07EA2605470400DC2AE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5B07EB2605470400DC2AE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA5B08042605470400DC2AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA5B08052605470400DC2AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5B08072605470400DC2AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A83319FFED641CD40ED3EF /* Pods-TorAlarmCodingTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTask/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA5B08082605470400DC2AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD4CE399D72FB6721C8C787 /* Pods-TorAlarmCodingTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTask/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FA5B080A2605470400DC2AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1648EF7FBF1B68660539114C /* Pods-TorAlarmCodingTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorAlarmCodingTask.app/TorAlarmCodingTask";
+			};
+			name = Debug;
+		};
+		FA5B080B2605470400DC2AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7753D88318CEBF4BF5A6AD3E /* Pods-TorAlarmCodingTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorAlarmCodingTask.app/TorAlarmCodingTask";
+			};
+			name = Release;
+		};
+		FA5B080D2605470400DC2AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F455A883879C800430983658 /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TorAlarmCodingTask;
+			};
+			name = Debug;
+		};
+		FA5B080E2605470400DC2AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936C8E3917077F54E4FC262B /* Pods-TorAlarmCodingTask-TorAlarmCodingTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TorAlarmCodingTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.TorAlarmCodingTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TorAlarmCodingTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA5B07D72605470300DC2AE2 /* Build configuration list for PBXProject "TorAlarmCodingTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5B08042605470400DC2AE2 /* Debug */,
+				FA5B08052605470400DC2AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5B08062605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5B08072605470400DC2AE2 /* Debug */,
+				FA5B08082605470400DC2AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5B08092605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5B080A2605470400DC2AE2 /* Debug */,
+				FA5B080B2605470400DC2AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5B080C2605470400DC2AE2 /* Build configuration list for PBXNativeTarget "TorAlarmCodingTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5B080D2605470400DC2AE2 /* Debug */,
+				FA5B080E2605470400DC2AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA5B07D42605470300DC2AE2 /* Project object */;
+}

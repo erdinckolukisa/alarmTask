@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8654EE92-88B5-4D3A-9D36-68CAF35C1DF2"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00B1ABC8-C1A4-4CD8-A13C-9A584E7A494A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "loadNews(category:reset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C73067C-13F6-425F-817D-64759E92A1E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadNews(category:reset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2DC7113-C5BE-49DB-A2BA-86A02650CD24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "loadNews(category:reset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2DC7113-C5BE-49DB-A2BA-86A02650CD24 - c6d8322496fda3e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TorAlarmCodingTask.Response, TorAlarmCodingTask.NetworkError&gt;) -&gt; () in TorAlarmCodingTask.NewsListViewModel.loadNews(category: Swift.String, reset: Swift.Bool) -&gt; ()"
+                  moduleName = "TorAlarmCodingTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/turgutekmekci/Downloads/TorAlarmCodingTask-4/TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "E2DC7113-C5BE-49DB-A2BA-86A02650CD24 - 54c729b1c654183a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TorAlarmCodingTask.Article) -&gt; Swift.Optional&lt;TorAlarmCodingTask.NewsViewModel&gt; in closure #1 (Swift.Result&lt;TorAlarmCodingTask.Response, TorAlarmCodingTask.NetworkError&gt;) -&gt; () in TorAlarmCodingTask.NewsListViewModel.loadNews(category: Swift.String, reset: Swift.Bool) -&gt; ()"
+                  moduleName = "TorAlarmCodingTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/turgutekmekci/Downloads/TorAlarmCodingTask-4/TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76E38ED1-AEDB-4EB5-930C-A1082D2B7DCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "getNews(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81EE4A55-1E90-4917-B030-AD1DC4DBBAA0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/ViewModel/NewsListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "loadNews(category:reset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F14EC42-D721-4584-926D-59B1BF49E16B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorAlarmCodingTask/NewsList/View/NewsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

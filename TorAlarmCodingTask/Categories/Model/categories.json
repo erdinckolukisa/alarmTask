@@ -1,0 +1,38 @@
+[
+    {
+        "id": "business",
+        "name": "Business",
+        "icon": "business"
+    },
+    {
+        "id": "entertainment",
+        "name": "Entertainment",
+        "icon": "entertainment"
+    },
+    {
+        "id": "general",
+        "name": "General",
+        "icon": "general"
+    },
+    {
+        "id": "health",
+        "name": "Health",
+        "icon": "health"
+    },
+    {
+        "id": "science",
+        "name": "Science",
+        "icon": "science"
+    },
+    {
+        "id": "sports",
+        "name": "Sports",
+        "icon": "sports"
+    },
+    {
+        "id": "technology",
+        "name": "Technology",
+        "icon": "technology"
+    },
+    
+]

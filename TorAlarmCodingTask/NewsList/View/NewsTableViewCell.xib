@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableViewCell" rowHeight="82" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="TorAlarmCodingTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11111" translatesAutoresizingMaskIntoConstraints="NO" id="kuL-1X-MhE">
+                        <rect key="frame" x="8" y="8" width="127" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kuL-1X-MhE" secondAttribute="height" multiplier="127:72" id="LEE-QH-OlQ"/>
+                            <constraint firstAttribute="width" constant="127" id="ouv-3k-dpA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASDSSALD ALSDAS LDSALLSALDL LDSALLSALDL LDSALLSALDL" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-jP-0oF">
+                        <rect key="frame" x="143" y="8" width="264" height="46.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKf-57-9aC">
+                        <rect key="frame" x="143" y="62.5" width="264" height="16"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vr7-jP-0oF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2Gr-n4-bTB"/>
+                    <constraint firstItem="kuL-1X-MhE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="C2i-Yj-Shy"/>
+                    <constraint firstAttribute="trailing" secondItem="vKf-57-9aC" secondAttribute="trailing" constant="20" symbolic="YES" id="R3n-h3-fc9"/>
+                    <constraint firstItem="vr7-jP-0oF" firstAttribute="leading" secondItem="kuL-1X-MhE" secondAttribute="trailing" constant="8" symbolic="YES" id="Xoc-ar-iLk"/>
+                    <constraint firstItem="vKf-57-9aC" firstAttribute="leading" secondItem="kuL-1X-MhE" secondAttribute="trailing" constant="8" symbolic="YES" id="Ynt-bZ-GiY"/>
+                    <constraint firstItem="kuL-1X-MhE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="b5S-6S-4WY"/>
+                    <constraint firstItem="vKf-57-9aC" firstAttribute="top" secondItem="vr7-jP-0oF" secondAttribute="bottom" constant="8" symbolic="YES" id="qfb-du-2Cl"/>
+                    <constraint firstAttribute="bottom" secondItem="vKf-57-9aC" secondAttribute="bottom" constant="13.5" id="spW-zo-0Fb"/>
+                    <constraint firstAttribute="trailing" secondItem="vr7-jP-0oF" secondAttribute="trailing" constant="20" symbolic="YES" id="xIc-qB-b70"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="vKf-57-9aC" id="fgw-M3-Jru"/>
+                <outlet property="newsImageView" destination="kuL-1X-MhE" id="ETj-SW-Elt"/>
+                <outlet property="newsTitleLabel" destination="vr7-jP-0oF" id="VFe-1Y-FeL"/>
+            </connections>
+            <point key="canvasLocation" x="-958.69565217391312" y="-90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="11111" width="1920" height="1080"/>
+    </resources>
+</document>
