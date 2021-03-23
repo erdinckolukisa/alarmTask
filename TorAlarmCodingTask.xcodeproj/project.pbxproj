@@ -31,6 +31,7 @@
 		FA68F053260938D7007F26E2 /* StubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F052260938D7007F26E2 /* StubApiTests.swift */; };
 		FA68F05826094816007F26E2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F05726094816007F26E2 /* UIColor+Extension.swift */; };
 		FA68F06926094DAD007F26E2 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68F06826094DAD007F26E2 /* SearchResultTableViewController.swift */; };
+		FA7DAEA4260A5C5C004D9255 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DAEA3260A5C5C004D9255 /* ErrorModel.swift */; };
 		FAB0966126066B5F000EFFE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966026066B5F000EFFE6 /* Category.swift */; };
 		FAB0966626066B7E000EFFE6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966526066B7E000EFFE6 /* CategoryViewController.swift */; };
 		FAB0966B26066B97000EFFE6 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0966A26066B97000EFFE6 /* CategoryListViewModel.swift */; };
@@ -98,6 +99,7 @@
 		FA68F052260938D7007F26E2 /* StubApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApiTests.swift; sourceTree = "<group>"; };
 		FA68F05726094816007F26E2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		FA68F06826094DAD007F26E2 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		FA7DAEA3260A5C5C004D9255 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		FAB0966026066B5F000EFFE6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FAB0966526066B7E000EFFE6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		FAB0966A26066B97000EFFE6 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		FA5B07D32605470300DC2AE2 = {
 			isa = PBXGroup;
 			children = (
+				FA10BFA22609C5C70062E2C1 /* README.md */,
 				FA5B07DE2605470300DC2AE2 /* TorAlarmCodingTask */,
 				FA5B07F52605470400DC2AE2 /* TorAlarmCodingTaskTests */,
 				FA5B08002605470400DC2AE2 /* TorAlarmCodingTaskUITests */,
@@ -187,7 +190,6 @@
 		FA5B07DE2605470300DC2AE2 /* TorAlarmCodingTask */ = {
 			isa = PBXGroup;
 			children = (
-				FA10BFA22609C5C70062E2C1 /* README.md */,
 				FA5B07DF2605470300DC2AE2 /* AppDelegate.swift */,
 				FA5B07E12605470300DC2AE2 /* SceneDelegate.swift */,
 				FA68F070260954BE007F26E2 /* Search */,
@@ -281,6 +283,7 @@
 		FA5B082B26054ABE00DC2AE2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FA7DAEA3260A5C5C004D9255 /* ErrorModel.swift */,
 				FA5B082D26054AD500DC2AE2 /* Networkable.swift */,
 				FA5B083626054AF700DC2AE2 /* WebApi.swift */,
 				FA5B083E26054B0E00DC2AE2 /* StubApi.swift */,
@@ -631,6 +634,7 @@
 				FAB096782606829F000EFFE6 /* CategoryViewModel.swift in Sources */,
 				FA5B084826054FB200DC2AE2 /* Response.swift in Sources */,
 				FA5B083F26054B0E00DC2AE2 /* StubApi.swift in Sources */,
+				FA7DAEA4260A5C5C004D9255 /* ErrorModel.swift in Sources */,
 				FA5B085B2605558500DC2AE2 /* NewsTableViewCell.swift in Sources */,
 				FA5B084D26054FF500DC2AE2 /* Article.swift in Sources */,
 				FAB0967E26068377000EFFE6 /* CategoryTableViewCell.swift in Sources */,

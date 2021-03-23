@@ -87,8 +87,13 @@ class WebApi: Networkable {
     }
     
     private func sendData<T: Decodable>(request: URLRequest, completion: @escaping (Result<T, NetworkError>) -> ()) {
-        URLSession.shared.dataTask(with: request) { (data, _, error) in
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    completion(.failure(.responseError(message: error?.localizedDescription ?? Constants.Errors.genericError)))
+                    return
+                }
+                
                 if (error != nil) {
                     completion(.failure(.responseError(message: error?.localizedDescription ?? Constants.Errors.genericError)))
                     
@@ -102,8 +107,16 @@ class WebApi: Networkable {
                 }
                 
                 do {
-                    let model = try JSONDecoder().decode(T.self, from: data)
-                    completion(.success(model))
+                    
+                    if (200..<300).contains(httpResponse.statusCode) {
+                        let model = try JSONDecoder().decode(T.self, from: data)
+                        completion(.success(model))
+                    } else {
+                        
+                        // API errors can be handled according to error code by adding more else clause.
+                        let model = try JSONDecoder().decode(ErrorModel.self, from: data)
+                        completion(.failure(.responseError(message: model.message ?? Constants.Errors.genericError)))
+                    }
                     
                 } catch {
                     completion(.failure(.decodingError))
