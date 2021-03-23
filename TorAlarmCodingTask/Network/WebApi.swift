@@ -14,9 +14,8 @@ enum NetworkError: Error {
 }
 
 class WebApi: Networkable {
-//    "98ad516f84bd490e8061feacb43979aa" TorAlert Key
     private var urlComponents = URLComponents()
-    private let apiKey = "1c7a3f5625b7443280ce15b0e5a8b3c9"
+    private let apiKey = "98ad516f84bd490e8061feacb43979aa"
     private var queryItems: [URLQueryItem] = [URLQueryItem]()
 
     lazy var defaultQueryItems: [URLQueryItem] = {
