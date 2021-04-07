@@ -57,7 +57,7 @@ class NewsListViewModel {
         workItem?.cancel()
         workItem = DispatchWorkItem { [weak self] in
             
-            if (self?.workItem!.isCancelled)! {
+            if (self?.workItem?.isCancelled) != nil {
                 return
             }
             

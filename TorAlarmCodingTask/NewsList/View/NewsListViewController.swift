@@ -12,9 +12,7 @@ class NewsListViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
     
     private var newsListViewModel: NewsListViewModel?
-    private var isLoadingNextPage = false
     private let refreshControl = UIRefreshControl()
-    private var searchController: UISearchController!
     
     var network: Networkable?
     var newsCategory: String?

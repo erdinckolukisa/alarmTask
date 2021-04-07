@@ -12,9 +12,8 @@ class CategoryViewController: UIViewController {
     @IBOutlet weak var categoriesTableView: UITableView!
     
     private let categoryListViewModel = CategoryListViewModel(network: StubApi())
-    private var isSearching = false
     private var searchText: String?
-    private var searchController: UISearchController!
+    private var searchController: UISearchController?
     private var searchResultTableViewController: SearchResultTableViewController?
 
     override func viewDidLoad() {
@@ -103,16 +102,16 @@ extension CategoryViewController: UISearchControllerDelegate {
             return SearchResultTableViewController(coder: coder, searchViewModel: NewsListViewModel(network: WebApi()))
         })
         searchController = UISearchController(searchResultsController: searchResultTableViewController)
-        searchController.delegate = self
-        searchController.searchResultsUpdater = searchResultTableViewController
+        searchController?.delegate = self
+        searchController?.searchResultsUpdater = searchResultTableViewController
         definesPresentationContext = true
-        searchController.loadViewIfNeeded()
-        searchController.searchBar.delegate = searchResultTableViewController
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.sizeToFit()
-        searchController.searchBar.placeholder = "Type something to search news"
-        searchController.searchBar.tintColor = UIColor.appAccentColor
-        searchController.searchBar.backgroundColor = UIColor.white
-        navigationItem.titleView = searchController.searchBar
+        searchController?.loadViewIfNeeded()
+        searchController?.searchBar.delegate = searchResultTableViewController
+        searchController?.hidesNavigationBarDuringPresentation = false
+        searchController?.searchBar.sizeToFit()
+        searchController?.searchBar.placeholder = "Type something to search news"
+        searchController?.searchBar.tintColor = UIColor.appAccentColor
+        searchController?.searchBar.backgroundColor = UIColor.white
+        navigationItem.titleView = searchController?.searchBar
     }
 }

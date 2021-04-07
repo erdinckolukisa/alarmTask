@@ -10,7 +10,6 @@ import UIKit
 class SearchResultTableViewController: UITableViewController {
     
     private var searchViewModel: NewsListViewModel?
-    private var isSearching = false
     private var searchText: String?
 
     override func viewDidLoad() {
@@ -77,7 +76,6 @@ class SearchResultTableViewController: UITableViewController {
 extension SearchResultTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchText = searchController.searchBar.text, searchText.count > 0 else { return }
-        isSearching = true
         self.searchText = searchText
         searchViewModel?.searchForNews(with: searchText, reset: true)
     }
